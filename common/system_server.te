@@ -189,3 +189,6 @@ hal_client_domain(system_server, hal_wigig)
 
 # allow system_server to access IOP HAL service
 hal_client_domain(system_server, hal_iop)
+
+# Allow system server to change hw button properties
+allow system_server qemu_hw_mainkeys_prop:property_service set;
