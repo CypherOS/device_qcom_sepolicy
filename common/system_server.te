@@ -197,6 +197,9 @@ allow system_server sysfs_wigig:file rw_file_perms;
 # allow system_server to access IOP HAL service
 hal_client_domain(system_server, hal_iop)
 
+# Allow system server to change hw button properties
+allow system_server qemu_hw_mainkeys_prop:property_service set;
+
 #kgsl
 r_dir_file(system_server, kgsl_debugfs);
 
