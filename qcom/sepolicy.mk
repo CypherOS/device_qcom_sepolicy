@@ -5,3 +5,5 @@
 
 BOARD_SEPOLICY_DIRS += \
     device/qcom/sepolicy/qcom
+	
+-include vendor/aoscp/sepolicy/qcom/sepolicy.mk

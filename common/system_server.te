@@ -1,0 +1,2 @@
+# Allow system server to change hw button properties
+allow system_server qemu_hw_mainkeys_prop:property_service set;
