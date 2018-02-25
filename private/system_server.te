@@ -39,3 +39,6 @@ allow system_server izat_service:service_manager add;
 
 #Allow system_server to add and find regionalization service
 add_service(system_server, regionalization_service);
+
+# Allow system_server to create and access it's socket
+allow system_server seempdw_socket:file { create read write open };
