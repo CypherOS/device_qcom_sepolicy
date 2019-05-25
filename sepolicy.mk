@@ -26,4 +26,4 @@ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
     device/qcom/sepolicy/private
 
--include vendor/aoscp/sepolicy/qcom/sepolicy.mk
+-include device/aoscp/sepolicy/qcom/sepolicy.mk
